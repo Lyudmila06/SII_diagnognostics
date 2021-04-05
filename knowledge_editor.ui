@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>knowledge_editor</class>
+ <widget class="QWidget" name="knowledge_editor">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>618</width>
+    <height>469</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>410</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Назад</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>481</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <item>
+    <property name="text">
+     <string>Признаки</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Возможные значения признаков</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Нормальные значения признаков</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Заболевания</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Признаковое описание заболеваний</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Значения признаков при заболевании</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Проверка целостности базы знаний</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
