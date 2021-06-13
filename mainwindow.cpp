@@ -8,6 +8,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     editWindow = new knowledge_editor();
     connect(editWindow, &knowledge_editor::mainMenu, this, &MainWindow::show);
+    classWindow = new classifier_attr();
+    connect(classWindow, &classifier_attr::mainMenu, this, &MainWindow::show);
 }
 
 MainWindow::~MainWindow()
@@ -25,4 +27,13 @@ void MainWindow::on_editButton_clicked()
 void MainWindow::on_commandLinkButton_clicked()
 {
     QApplication::quit();
+}
+
+
+
+void MainWindow::on_classButton_clicked()
+{
+    classWindow->fill_leftList();
+    classWindow->show();
+    this->close();
 }

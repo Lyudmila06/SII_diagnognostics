@@ -11,12 +11,12 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Признаки</string>
   </property>
   <widget class="QPushButton" name="pushButtonDel">
    <property name="geometry">
     <rect>
-     <x>330</x>
+     <x>360</x>
      <y>400</y>
      <width>93</width>
      <height>28</height>
@@ -119,12 +119,28 @@
     <rect>
      <x>60</x>
      <y>170</y>
-     <width>361</width>
+     <width>391</width>
      <height>192</height>
     </rect>
    </property>
    <property name="editTriggers">
     <set>QAbstractItemView::EditKeyPressed</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButtonEdit">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>400</y>
+     <width>92</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::StrongFocus</enum>
+   </property>
+   <property name="text">
+    <string>Изменить</string>
    </property>
   </widget>
  </widget>

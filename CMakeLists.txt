@@ -47,7 +47,30 @@ set(PROJECT_SOURCES
         attribute_normal_values.cpp
         attribute_normal_values.h
         attribute_normal_values.ui
-
+        clinical_picture.cpp
+        clinical_picture.h
+        clinical_picture.ui
+        disease_description.cpp
+        disease_description.h
+        disease_description.ui
+        completeness_check.cpp
+        completeness_check.h
+        completeness_check.ui
+        edit_dialog.cpp
+        edit_dialog.h
+        edit_dialog.ui
+        classifier_attr.cpp
+        classifier_attr.h
+        classifier_attr.ui
+        classifier_values.cpp
+        classifier_values.h
+        classifier_values.ui
+        value_dialog.cpp
+        value_dialog.h
+        value_dialog.ui
+        classifier_result.cpp
+        classifier_result.h
+        classifier_result.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

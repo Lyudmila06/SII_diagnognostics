@@ -6,6 +6,10 @@
 #include  "attribute_editor.h"
 #include "disease_editor.h"
 #include "attribute_possible_values.h"
+#include "attribute_normal_values.h"
+#include "clinical_picture.h"
+#include "disease_description.h"
+#include "completeness_check.h"
 
 
 
@@ -34,6 +38,10 @@ private:
     attribute_editor *attr_editWindow;
     disease_editor *dis_editWindow;
     attribute_possible_values *attr_possWindow;
+    attribute_normal_values *attr_normWindow;
+    clinical_picture *clinic_picWindow;
+    disease_description *dis_descrWindow;
+    completeness_check *compl_checkWindow;
 };
 
 #endif // KNOWLEDGE_EDITOR_H

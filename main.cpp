@@ -5,9 +5,11 @@
 #include <QSqlError>
 #include <QMessageBox>
 #include <QSortFilterProxyModel>
+#include <QDir>
 
+QString dir_ = QDir::currentPath().replace("/", "\\");
 #define ACCESS "DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};FIL={MS Access};" \
-    "DBQ=C:\\Users\\Lyudmila\\Documents\\SII_diagnostics\\SII_medical_DB.accdb"
+    "DBQ=" + dir_ + "\\SII_medical_DB.accdb"
 QSqlDatabase mDatabase;
 
 int main(int argc, char *argv[])
@@ -18,7 +20,6 @@ int main(int argc, char *argv[])
     mDatabase = QSqlDatabase::addDatabase("QODBC");
     mDatabase.setDatabaseName(ACCESS);
     if (!mDatabase.open()) {
-            //QMessageBox::critical("Error", mDatabase.lastError().text());
             return a.exec();
         }
     MainWindow w;

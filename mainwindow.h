@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "knowledge_editor.h"
+#include "classifier_attr.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,8 +24,12 @@ private slots:
 
     void on_commandLinkButton_clicked();
 
+
+    void on_classButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     knowledge_editor *editWindow;
+    classifier_attr *classWindow;
 };
 #endif // MAINWINDOW_H

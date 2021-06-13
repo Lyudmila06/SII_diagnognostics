@@ -17,8 +17,11 @@ public:
     ~attribute_possible_values();
     void update_mModel();
 
-    //ДОДЕЛАТЬ
     void clean_lineEdits();
+
+    bool checkQualVal(QString s);
+
+    void deleteDisAttr(QString name);
 
 signals:
     void mainEditor();
